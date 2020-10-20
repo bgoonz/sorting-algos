@@ -29,7 +29,7 @@ Finding a target pair x ∈ A and y ∈ A such that x+y equals to a target z, et
 Bubble sort is a simple sorting algorithm. This sorting algorithm is comparison-based algorithm in which each pair of adjacent elements is compared and the elements are swapped if they are not in order. This algorithm is not suitable for large data sets as its average and worst case complexity are of Ο(n2) where n is the number of items.
 
 How Bubble Sort Works?
-We take an unsorted array for our example. Bubble sort takes Ο(n2) time so we're keeping it short and precise.
+We take an unsorted array for our example. Bubble sort takes Ο(n^2) time so we're keeping it short and precise.
 
 Bubble Sort
 Bubble sort starts with very first two elements, comparing them to check which one is greater.
@@ -123,7 +123,7 @@ end procedure return list
 ![bubble sort](![](https://s3-us-west-1.amazonaws.com/appacademy-open-assets/data_structures_algorithms/naive_sorting_algorithms/bubble_sort/images/BubbleSort.gif)
 
 
-![bubble]
+![bubble](https://java2blog.com/wp-content/uploads/2017/12/BubbleSort_Avg_case.gif)
 
 The algorithm bubbles up
 As you progress through the algorithms and data structures of this course, you'll eventually notice that there are some recurring funny terms. "Bubbling up" is one of those terms.
@@ -188,14 +188,21 @@ Increment MIN to point to next element
 Repeat until list is sorted
 
 ![selection](![](https://s3-us-west-1.amazonaws.com/appacademy-open-assets/data_structures_algorithms/naive_sorting_algorithms/selection_sort/images/SelectionSort.gif)
+![](https://upload.wikimedia.org/wikipedia/commons/f/f6/Selection_Sort_Animation.gif)![](https://res.cloudinary.com/practicaldev/image/fetch/s--T7PUry2L--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://miro.medium.com/max/3840/1%2Ak0dHMa2l2bRr95VB4llOqw.gif)
+
+Starting from the beginning of the list,
+
+1, Find the minimum unsorted element
+2 Swap it with the current index (front of the unsorted list)
+3 Move to the next index and repeat from step 1
+4 Repeat until at the end of the list
 
 The algorithm: select the next smallest
 Selection sort works by maintaining a sorted region on the left side of the input array; this sorted region will grow by one element with every "pass" of the algorithm. A single "pass" of selection sort will select the next smallest element of unsorted region of the array and move it to the sorted region. Because a single pass of selection sort will move an element of the unsorted region into the sorted region, this means a single pass will shrink the unsorted region by 1 element whilst increasing the sorted region by 1 element. Selection sort is complete when the sorted region spans the entire array and the unsorted region is empty!
 
 # <===============(Insertion Sort)================>
 
-![insertion](![](https://s3-us-west-1.amazonaws.com/appacademy-open-assets/data_structures_algorithms/naive_sorting_algorithms/insertion_sort/images/InsertionSort.gif)
-
+![insertion](https://s3-us-west-1.amazonaws.com/appacademy-open-assets/data_structures_algorithms/naive_sorting_algorithms/insertion_sort/images/InsertionSort.gif)![](https://thumbs.gfycat.com/CornyThickGordonsetter-small.gif)![](https://i.pinimg.com/originals/92/b0/34/92b034385c440e08bc8551c97df0a2e3.gif)
 The algorithm: insert into the sorted region
 Insertion Sort is similar to Selection Sort in that it gradually builds up a larger and larger sorted region at the left-most end of the array.
 
@@ -204,7 +211,8 @@ However, Insertion Sort differs from Selection Sort because this algorithm does 
 ![insertion](https://upload.wikimedia.org/wikipedia/commons/0/0f/Insertion-sort-example-300px.gif)
 
 # <===============(Merge Sort)================>
-![merge sort](https://s3-us-west-1.amazonaws.com/appacademy-open-assets/data_structures_algorithms/efficient_sorting_algorithms/merge_sort/images/MergeSort.gif)![alttext](http://btholt.github.io/four-semesters-of-cs/img/merge.gif)![alt](https://i.imgur.com/HU2tfzo.gif)
+![merge sort](https://s3-us-west-1.amazonaws.com/appacademy-open-assets/data_structures_algorithms/efficient_sorting_algorithms/merge_sort/images/MergeSort.gif)![alttext](http://btholt.github.io/four-semesters-of-cs/img/merge.gif)![alt](https://i.imgur.com/HU2tfzo.gif) 
+![alttext](https://media1.giphy.com/media/Jl1q5AiIyO7AAdMOG8/giphy.gif)![](https://res.cloudinary.com/practicaldev/image/fetch/s--pdU-IP47--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://upload.wikimedia.org/wikipedia/commons/c/cc/Merge-sort-example-300px.gif)
 it is easy to merge elements of two sorted arrays into a single sorted array
 you can consider an array containing only a single element as already trivially sorted
 you can also consider an empty array as trivially sorted
@@ -283,3 +291,8 @@ function partition(array, pivot) {
   return [ left, right ];
 }
 You don't have to use an explicit partition helper function in your Quick Sort implementation; however, we will borrow heavily from this pattern
+
+
+
+
+![](https://i.imgur.com/fq0A8hx.gif)

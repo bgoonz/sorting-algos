@@ -204,7 +204,7 @@ However, Insertion Sort differs from Selection Sort because this algorithm does 
 ![insertion](https://upload.wikimedia.org/wikipedia/commons/0/0f/Insertion-sort-example-300px.gif)
 
 # <===============(Merge Sort)================>
-![merge sort](https://s3-us-west-1.amazonaws.com/appacademy-open-assets/data_structures_algorithms/efficient_sorting_algorithms/merge_sort/images/MergeSort.gif)
+![merge sort](https://s3-us-west-1.amazonaws.com/appacademy-open-assets/data_structures_algorithms/efficient_sorting_algorithms/merge_sort/images/MergeSort.gif)![alttext](http://btholt.github.io/four-semesters-of-cs/img/merge.gif)![alt](https://i.imgur.com/HU2tfzo.gif)
 it is easy to merge elements of two sorted arrays into a single sorted array
 you can consider an array containing only a single element as already trivially sorted
 you can also consider an empty array as trivially sorted
@@ -224,15 +224,7 @@ merge the smaller lists into new list in sorted order.
 
 # <===============(Quick Sort)================>
 ![quick sort](https://s3-us-west-1.amazonaws.com/appacademy-open-assets/data_structures_algorithms/efficient_sorting_algorithms/quick_sort/images/QuickSort.gif)
-
-
-
-
-
-
-
-
-![alt-text](https://upload.wikimedia.org/wikipedia/commons/c/cc/Merge-sort-example-300px.gif)
+![alt-text](https://upload.wikimedia.org/wikipedia/commons/6/6a/Sorting_quicksort_anim.gif)![alt-text](https://upload.wikimedia.org/wikipedia/commons/c/cc/Merge-sort-example-300px.gif)![alttext](http://btholt.github.io/four-semesters-of-cs/img/bubble.gif)
 
 
 
